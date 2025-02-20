@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "900692415014",
+    "project_id": "alexa-mart-50b04",
+    "storage_bucket": "alexa-mart-50b04.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900692415014:android:99bec7eaffde5877d28ce7",
+        "android_client_info": {
+          "package_name": "com.example.e_commerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDALWqHku0u8pZ4eBPD3lUEtmuDQweC1no"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
