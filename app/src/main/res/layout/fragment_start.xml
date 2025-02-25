@@ -8,47 +8,53 @@
     android:orientation="vertical"
     tools:context=".view.starter.startFragment">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alexa Mart"
+        android:textStyle="bold"
+        android:textColor="#D17D11"
+        android:gravity="center"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginTop="5dp"
+        />
+
 
     <ImageView
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_100sdp"
         android:src="@mipmap/ic_launcher" />
 
-    <TextView
+
+    <Button
+        android:id="@+id/login"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Alexa Mart"
+        android:layout_height="@dimen/_35sdp"
+        android:text="Log in"
         android:textStyle="bold"
         android:textColor="#C79332"
         android:gravity="center"
-        android:textSize="@dimen/_15sdp"
+        android:textSize="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="#182462"
+        android:layout_marginHorizontal="@dimen/_85sdp"
+        app:cornerRadius="@dimen/_6sdp"
         />
 
     <Button
-        android:id="@+id/btnlogin"
+        android:id="@+id/signup"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_30sdp"
-        android:layout_marginHorizontal="@dimen/_70sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:text="Sign up"
         android:textStyle="bold"
-        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-        android:text="Login"
+        android:textColor="#EDBB5B"
+        android:gravity="center"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:backgroundTint="#422C0A"
+        android:layout_marginHorizontal="@dimen/_85sdp"
+        app:cornerRadius="@dimen/_6sdp"
         />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnreg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginHorizontal="@dimen/_70sdp"
-        android:textStyle="bold"
-        app:strokeColor="#3E4949"
-        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-        android:text="Register"
-        android:backgroundTint="#203733"
-        />
-
 
 
 
