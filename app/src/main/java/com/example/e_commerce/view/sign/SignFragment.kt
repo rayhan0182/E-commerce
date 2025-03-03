@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.view.isEmpty
 import com.example.e_commerce.R
+import com.example.e_commerce.data.models.UserRegister
 import com.example.e_commerce.databinding.FragmentSignBinding
 import com.example.e_commerce.isEmpty
 
@@ -22,7 +23,7 @@ class signFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
 
-        binding = FragmentSignBinding.inflate(inflater,container,false)
+        binding = FragmentSignBinding.inflate(inflater, container, false)
 
         setOnclicklistner()
 
@@ -31,27 +32,39 @@ class signFragment : Fragment() {
 
     private fun setOnclicklistner() {
 
-        with(binding){
+        with(binding) {
 
-           signbtn.setOnClickListener {
+            signbtn.setOnClickListener {
 
-              username.isEmpty()
+                username.isEmpty()
 
-              useremail.isEmpty()
+                useremail.isEmpty()
 
-             userpassword.isEmpty()
+                userpassword.isEmpty()
 
-            if (!username.isEmpty() && !useremail.isEmpty() && !userpassword.isEmpty()){
+                if (!username.isEmpty() && !useremail.isEmpty() && !userpassword.isEmpty()) {
 
-                Toast.makeText(context,"done signup",Toast.LENGTH_LONG).show()
+                    val user = UserRegister(
+
+                        username.text.toString(),
+
+                        useremail.text.toString(),
+
+                        userpassword.text.toString(),
+
+                        "seller",
+
+                        ""
+
+                    )
+
+                    val data = RegistrationViewModel().userdata(user)
+
+
+                }
+
 
             }
-
-
-
-
-
-           }
 
         }
 

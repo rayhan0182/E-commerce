@@ -1,87 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".view.sign.signFragment"
-    >
+    tools:context=".view.sign.signFragment">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animationView"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_200sdp"
-        android:layout_marginHorizontal="@dimen/_10sdp"
-        app:lottie_rawRes="@raw/login"
-        app:lottie_autoPlay="true"
         android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_20sdp"
-        app:lottie_loop="true"/>
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/login" />
 
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="user name"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        app:boxStrokeColor="#B33F33"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        android:hint="user name"
+        app:boxStrokeColor="#B33F33">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo_2"
-            android:textColor="@color/black"
-            android:inputType="textEmailAddress"
             android:layout_marginTop="@dimen/_20sdp"
-            />
+            android:fontFamily="@font/baloo_2"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="user email"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        app:boxStrokeColor="#B33F33"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_marginTop="@dimen/_10sdp"
-        >
+        android:hint="user email"
+        app:boxStrokeColor="#B33F33">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/useremail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo_2"
-            android:textColor="@color/black"
-            android:inputType="textEmailAddress"
             android:layout_marginTop="@dimen/_15sdp"
-            />
+            android:fontFamily="@font/baloo_2"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userpassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="user password"
-        app:endIconMode="password_toggle"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        app:boxStrokeColor="#B33F33"
         android:layout_marginTop="@dimen/_15sdp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        >
+        android:hint="user password"
+        app:boxStrokeColor="#B33F33"
+        app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
+            android:id="@+id/userpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/baloo_2"
-            android:textColor="@color/black"
-            android:inputType="textWebPassword"
-            />
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,20 +86,18 @@
         android:layout_marginHorizontal="@dimen/_30sdp"
         android:layout_marginTop="@dimen/_35sdp"
         android:background="@drawable/gradientcolour"
-        android:text="Sign Up"
-        android:textStyle="bold"
-        android:textSize="@dimen/_13sdp"
-        android:textColor="@color/white"
         android:gravity="center"
-        />
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="@dimen/_25sdp"
         android:layout_marginHorizontal="@dimen/_50sdp"
-        >
+        android:layout_marginTop="@dimen/_25sdp"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/newuser"
@@ -122,18 +113,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Log in"
-            android:textStyle="bold"
-            android:textSize="@dimen/_12sdp"
             android:textColor="#B8665D"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
 
             />
 
     </LinearLayout>
-
-
-
-
-
 
 
 </LinearLayout>
