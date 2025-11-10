@@ -1,5 +1,6 @@
 package com.example.e_commerce.data.repository
 
+import com.example.e_commerce.data.models.UserLogin
 import com.example.e_commerce.data.models.UserRegister
 import com.example.e_commerce.service.AuthService
 import com.google.android.gms.tasks.Task
@@ -18,6 +19,13 @@ class AuthRepository : AuthService {
 
         return create_auth.createUserWithEmailAndPassword(user.email, user.password)
 
+    }
+
+    override fun userlogin(user: UserLogin): Task<AuthResult> {
+
+        val create_auth = FirebaseAuth.getInstance()
+
+      return  create_auth.signInWithEmailAndPassword(user.email,user.pass)
 
     }
 
